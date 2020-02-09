@@ -1,21 +1,10 @@
-
-<div class="row">
-  <div class="col-md-6">
-    <a href="http://srtalliance.org/">
-      <img alt="SRT" src="http://www.srtalliance.org/wp-content/uploads/SRT_text_hor_logo_grey.png" width="600"/>
-    </a>
-  </div>
-  <div class="col-md-6">
-    <a href="https://www.ffmpeg.org/">
-      <img alt="SRT" src="https://avatars2.githubusercontent.com/u/729418?s=200&v=4" width="100"/>
-    </a>
-  </div>
-</div>
-
-
 # Compilando e instalando `ffmpeg` com `Decklink SDK` e o protocolo `SRT`
 
-## Ambiente Linux
+<p class align="center">
+  <a href="https://www.blackmagicdesign.com">
+      <img alt="SRT" src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Blackmagic_Design_logo.png" width="400"/>
+  </a>
+</p>
 
 - Faça download do `Descktop Video Driver` e `Desktop Video SDK` https://www.blackmagicdesign.com/support/family/capture-and-playback 
 
@@ -41,6 +30,12 @@ mkdir -p ~/ffmpeg_sources ~/bin
 cp -r Blackmagic\ DeckLink\ SDK\ */Linux/ ~/ffmpeg_sources/BMD_SDK
 ```
 
+<p align="center">
+  <a href="http://srtalliance.org/">
+    <img alt="SRT" src="http://www.srtalliance.org/wp-content/uploads/SRT_text_hor_logo_grey.png" width="400"/>
+  </a>
+</p>
+
 - Instale o protocolo SRT
 
 ```bash
@@ -53,3 +48,6 @@ cmake -DCMAKE_INSTALL_PREFIX="$HOME/ffmpeg_build" -DENABLE_C_DEPS=ON -DENABLE_SH
 make
 make install
 ```
+
+
+
