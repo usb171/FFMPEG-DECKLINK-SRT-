@@ -1,11 +1,16 @@
-<p align="center">
-  <a href="http://srtalliance.org/">
-    <img alt="SRT" src="http://www.srtalliance.org/wp-content/uploads/SRT_text_hor_logo_grey.png" width="600"/>
-  </a>
-  <a href="https://www.ffmpeg.org/">
-    <img alt="SRT" src="https://avatars2.githubusercontent.com/u/729418?s=200&v=4" width="600"/>
-  </a>
-</p>
+
+<div class="row">
+  <div class="col-md-6">
+    <a href="http://srtalliance.org/">
+      <img alt="SRT" src="http://www.srtalliance.org/wp-content/uploads/SRT_text_hor_logo_grey.png" width="600"/>
+    </a>
+  </div>
+  <div class="col-md-6">
+    <a href="https://www.ffmpeg.org/">
+      <img alt="SRT" src="https://avatars2.githubusercontent.com/u/729418?s=200&v=4" width="100"/>
+    </a>
+  </div>
+</div>
 
 
 # Compilando e instalando `ffmpeg` com `Decklink SDK` e o protocolo `SRT`
