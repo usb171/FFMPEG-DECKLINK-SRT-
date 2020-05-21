@@ -112,4 +112,25 @@ make install
     https://github.com/Haivision/srt/blob/master/README.md
     https://gist.github.com/afriza/879fed4ede539a5a6501e0f046f71463
     
+    
+- Exemplo de execução
+
+  - Server SRT
+  ```
+  [program:SRT1]
+  command=srt-live-transmit srt://5000 srt://9999
+  user=cidadeverde
+  numprocs=1
+  autostart=true
+  autorestart=true
+  startsecs=10
+  startretries=1000
+  priority=1
+  ```
+
+  - SRT -> BlackMagic
+  ```ffmpeg -probesize 1024 -vcodec hevc -loglevel debug -i srt://192.168.254.70:9998 -f decklink -pix_fmt uyvy422 -         format_code Hi59 -s 1920x1080 -r 30000/1001 'DeckLink Duo (2)' -analyzeduration 0 ```
+
+
+    
  
